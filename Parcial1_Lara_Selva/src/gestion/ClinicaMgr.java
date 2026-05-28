@@ -10,7 +10,7 @@ import uy.edu.um.tad.queue.MyQueueImpl;
 import uy.edu.um.tad.stack.EmptyStackException;
 import uy.edu.um.tad.stack.MyStack;
 import uy.edu.um.tad.stack.MyStackImpl;
-
+//hola
 
 public class ClinicaMgr implements ClinicaMgt {
     private  MyQueue<Paciente> pacientes;
