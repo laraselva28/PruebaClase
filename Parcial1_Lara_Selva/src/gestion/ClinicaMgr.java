@@ -62,9 +62,12 @@ public class ClinicaMgr implements ClinicaMgt {
                 String id= solicitudactual.getPaciente().getCedula();
                 Turno nuevoturno= new Turno(id,solicitudactual.getPaciente(),solicitudactual.getEspecialidad());
                 turnos.push(nuevoturno);
+                Turno t = turnos.pop();
                 return nuevoturno;
 
             } catch (EmptyQueueException e) {
+                throw new RuntimeException(e);
+            } catch (EmptyStackException e) {
                 throw new RuntimeException(e);
             }
         }
